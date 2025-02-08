@@ -17,7 +17,7 @@ f.addEventListener("submit",(event)=> {
 
 async function getd(inp) {
     try{
-        const result = await fetch(`http://api.weatherapi.com/v1/current.json?key=1868b239ad23454d8be184230250602&q=${inp}&aqi=no`)
+        const result = await fetch(`https://api.weatherapi.com/v1/current.json?key=1868b239ad23454d8be184230250602&q=${inp}&aqi=no`)
         const dat = result.json()
         inp=""
         return dat
